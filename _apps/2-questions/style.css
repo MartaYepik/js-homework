@@ -1,0 +1,134 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+:root {
+  --background-color: #191a19;
+  --text-color: #f0ffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+table,
+th,
+tr {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+
+}
+tr{
+    height: 66px;
+}
+th {
+  height: 100%;
+  min-width: 260px;
+}
+td {
+  padding: 10px;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+}
+.input:focus-visible {
+  outline: none;
+}
+button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+button:active{
+    transform: scale(.9);
+}
+
+.spiner{
+    width: 100px;
+    display: none;
+}
+
+.imgJoy{
+    background-image: url(./assets/img/joy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+    background-size: 26%;
+}
+
+.imgSad{
+    background-image: url(./assets/img/sad.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s;
+    background-size: 26%;
+}
+.input_wrapper{
+    display: flex;
+
+}
+
+.counter{
+  display: none;
+}
+.correct{
+  display: flex;
+
+}
+
+.wrong{
+  display: flex;
+}
+.expression{
+  padding-right: 10px;
+}
+
+.digit{
+  font-size: 17px;
+  text-decoration: underline;
+}
