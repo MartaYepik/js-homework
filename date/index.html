@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date - homework</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Date - <mark>JavaScript</mark></h1>
+        <div class="container">
+            <p>1. Вивести на екран поточну дату</p>
+            <p class="current-date"></p>
+        </div>
+
+        <div class="container">
+            <p>2. Вивести на екран кількість годин, які пройшли з початку відліку до поточної дати та часу.<p>
+            <div>
+                <label for="firstDate">Введіть дату</label>
+                <input type="date" name="firstDate" id="firstDate">
+            </div>
+            <div>
+                <button class="btn-1">Підрахувати кількість год</button>
+            </div>
+            <div>
+                <p class="result-1">0</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>3. Порахувати кількість днів до дня народження. Користувач вводить в input дату народження, далі натискає на кнопку і отримує кількість днів до дня народження на екрані.<p>
+            <div>
+                <label for="userBirthdayDay">Введіть число дня народження</label>
+                <input type='number' name="userBirthdayDay" id="userBirthdayDay">
+            </div>
+            <div>
+                <label for="userBirthdayMonth">Введіть місяць дня народження</label>
+                <input type='number' name="userBirthdayMonth" id="userBirthdayMonth">
+            </div>
+            <div>
+                <button class="btn-2">Підрахувати кількість днів</button>
+            </div>
+            <div>
+                <p class="result-2">0</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>4. Перевірити чи являється поточна дата вихідним днем, результат вивести на екран.</p>
+            <p class="current-date-check"></p>
+            <span class="conclusion"></span>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
