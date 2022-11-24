@@ -1,0 +1,85 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600&display=swap');
+
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aaa7a7;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  color: rgb(1, 7, 12);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+.wrapper{
+    height: 100vh;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  height: 440px;
+  width: 310px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 12px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 12px 12px 6px -8px rgba(91, 88, 88, 0.75);
+
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.04);
+}
+.card-header{
+  height: 30%;
+  background-color: rgb(38, 62, 133);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.card-img{
+  background: #DEDEDE;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: -60px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.user-info{
+  padding: 20px;
+  padding-top: 74px;
+}
+
+.data{
+  padding-bottom: 6px;
+}
+.data span {
+  font-weight: bold;
+}
+.data .more-info {
+  color: rgb(39, 39, 190);
+}
+
+/* .data .more-info::before{
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28px' height='28px' viewBox='0 0 20 20' fill='currentColor' class='w-2 h-5'%3E%3Cpath fill-rule='evenodd' d='M9.674 2.075a.75.75 0 01.652 0l7.25 3.5A.75.75 0 0117 6.957V16.5h.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H3V6.957a.75.75 0 01-.576-1.382l7.25-3.5zM11 6a1 1 0 11-2 0 1 1 0 012 0zM7.5 9.75a.75.75 0 00-1.5 0v5.5a.75.75 0 001.5 0v-5.5zm3.25 0a.75.75 0 00-1.5 0v5.5a.75.75 0 001.5 0v-5.5zm3.25 0a.75.75 0 00-1.5 0v5.5a.75.75 0 001.5 0v-5.5z' clip-rule='evenodd' /%3E%3C/svg%3E");
+} */
